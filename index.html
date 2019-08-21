@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+  <style>
+    .js{
+      font-weight: bold;
+      color:red;
+    }
+    #first{
+      color:green;
+    }
+    span{
+      color:blue;
+    }
+  </style>
+</head>
+<body>>
+
+  <h1><a href="index.html">WEB</a></h1>
+  <input id="night_day" type="button" value="night" onclick="
+    var target = document.querySelector('body');
+    if(this.value === 'night'){
+      target.style.backgroundColor = 'black';
+      target.style.color = 'white';
+      this.value = 'day';
+
+      var alist = document.querySelectorAll('a');
+      var i = 0;
+      while(i < alist.length){
+        alist[i].style.color = 'powderblue';
+        i = i + 1;
+      }
+    } else {
+      target.style.backgroundColor = 'white';
+      target.style.color = 'black';
+      this.value = 'night';
+
+      var alist = document.querySelectorAll('a');
+      var i = 0;
+      while(i < alist.length){
+        alist[i].style.color = 'blue';
+        i = i + 1;
+      }
+    }
+  ">
+  <ol>
+    <li><a href="1.html">HTML</a></li>
+    <li><a href="2.html">CSS</a></li>
+    <li><a href="3.html">JavaScript</a></li>
+  </ol>
+<h2 style="background-color:coral;color:powderblue;">JavaScript</h2>
+<p>
+  <span id="first" class="js">JavaScript</span> (/ˈdʒɑːvəˌskrɪpt/[6]), often abbreviated as JS, is a high-level, dynamic, weakly typed, prototype-based, multi-paradigm, and interpreted programming language. Alongside <span>HTML</span> and <span>CSS</span>, <span class="js">JavaScript</span> is one of the three core technologies of World Wide Web content production. It is used to make webpages interactive and provide online programs, including video games. The majority of websites employ it, and all modern web browsers support it without the need for plug-ins by means of a built-in <span class="js">JavaScript</span> engine. Each of the many <span class="js">JavaScript</span> engines represent a different implementation of <span class="js">JavaScript</span>, all based on the ECMAScript specification, with some engines not supporting the spec fully, and with many engines supporting additional features beyond ECMA.
+</p>
+</body>
+</html>
+
+<h1>Comparison operators & Boolean</h1>
+<h2>===</h2>
+<h3>1===1</h3>
+<script>
+  document.write(1===1);
+</script>
+
+<h3>1===2</h3>
+<script>
+  document.write(1===2);
+</script>
+
+<h3>1&lt;2</h3>
+<script>
+  document.write(1<2);
+</script>
+
+<h3>1&lt;1</h3>
+<script>
+  document.write(1<1);
+</script>
+
+<h1>Conditional statements</h1>
+<h2>Program</h2>
+<script>
+  document.write("1<br>");
+  document.write("2<br>");
+  document.write("3<br>");
+  document.write("4<br>");
+</script>
+<h2>IF-true</h2>
+<script>
+  document.write("1<br>");
+  if(true){
+    document.write("2<br>");
+  } else {
+    document.write("3<br>");
+  }
+  document.write("4<br>");
+</script>
+
+<h2>IF-false</h2>
+<script>
+  document.write("1<br>");
+  if(false){
+    document.write("2<br>");
+  } else {
+    document.write("3<br>");
+  }
+  document.write("4<br>");
+</script>
+
+<h1>Loop & Array</h1>
+    <script>
+      var coworkers = ['egoing','leezche','duru','taeho'];
+    </script>
+    <h2>Co workers</h2>
+    <ul>
+      <script>
+        var i = 0;
+        while(i < coworkers.length){
+          document.write('<li><a href="http://a.com/'+coworkers[i]+'">'+coworkers[i]+'</a></li>');
+          i = i + 1;
+        }
+      </script>
+</ul>
+
